@@ -14,45 +14,45 @@ const Index = () => {
     {
       title: "KuttyMakers",
       ageGroup: "Ages 10-17",
-      description: "Develop curiosity and familiarity with foundational AI concepts such as pattern recognition and logic.",
+      description: "Spark curiosity and get cozy with cool AI basics like spotting patterns and thinking logically!",
       color: "purple",
       details: {
-        what: "Develop curiosity and familiarity with foundational AI concepts such as pattern recognition and logic.",
-        why: "Children are already immersed in AI. A formal introduction guides their curiosity. Without proper exposure, they risk becoming mere consumers of AI rather than creators or critical thinkers.",
-        how: "Through pattern recognition games, sorting exercises, AI storybooks, and hands-on experiments using tools like Teachable Machine and Scratch."
+        what: "Spark curiosity and get cozy with cool AI basics like spotting patterns and thinking logically!",
+        why: "Kids are already surrounded by AI every day. Let's help them understand it instead of just using it. We want them to be creators and critical thinkers, not just consumers!",
+        how: "Through fun pattern games, AI storybooks, and hands-on experiments with awesome tools like Teachable Machine and Scratch."
       }
     },
     {
       title: "Students",
       ageGroup: "Ages 18-25",
-      description: "Bridge the gap between academics and real-world AI applications through applied learning.",
+      description: "Connect what you learn in class with real-world AI that actually matters!",
       color: "blue",
       details: {
-        what: "Bridge the gap between academics and real-world AI applications through applied learning.",
-        why: "Many students graduate without understanding the technologies defining their future careers. Tomorrow's essential skills need to be developed today.",
-        how: "Through project-based learning, hackathons, mentorship programs, and collaboration with industry experts to build practical AI solutions."
+        what: "Connect what you learn in class with real-world AI that actually matters!",
+        why: "Too many students graduate without knowing the tech that'll shape their careers. We need to build tomorrow's skills today!",
+        how: "Through hands-on projects, exciting hackathons, mentorship from pros, and building real AI solutions that make a difference."
       }
     },
     {
       title: "Professionals",
       ageGroup: "Working Adults",
-      description: "Adapt to AI's rapid integration into the workplace and stay relevant in evolving careers.",
+      description: "Keep up with AI changes at work and stay ahead in your career game!",
       color: "orange",
       details: {
-        what: "Upskill and reskill professionals to adapt to AI-driven workplace transformations.",
-        why: "AI's rapid integration presents significant challenges for professionals, particularly freshers and those in the service industry. Automation and skill-based changes are drastically impacting the workforce.",
-        how: "Through intensive workshops, certification programs, hands-on projects, and industry partnerships focused on practical AI implementation."
+        what: "Level up your skills to thrive in the AI-powered workplace!",
+        why: "AI is changing jobs fast, especially for newcomers and service workers. Automation and new skills are reshaping everything. Let's make sure you're ready!",
+        how: "Through intensive workshops, certification programs, real projects, and partnerships with industry leaders who know their stuff."
       }
     },
     {
       title: "Everyone",
       ageGroup: "All Ages",
-      description: "Make AI literacy accessible to all, ensuring no one is left behind in the AI era.",
+      description: "Making sure everyone gets to understand AI, because nobody should be left out!",
       color: "green",
       details: {
-        what: "Create awareness about AI's impact on society, culture, and daily life for all community members.",
-        why: "AI offers opportunities for self-expression but also reflects biases. The rise of deepfakes and misinformation creates risks for all, especially elders facing scams and fake news.",
-        how: "Through community workshops, multilingual resources, storytelling sessions, and grassroots education programs that make AI knowledge a public good."
+        what: "Help everyone understand how AI affects our lives, culture, and communities.",
+        why: "AI can be amazing for creativity, but it can also spread biases and fake news. Deepfakes and scams are real threats, especially for our elders. Let's protect and empower everyone!",
+        how: "Through community hangouts, resources in your language, storytelling sessions, and grassroots programs that share AI knowledge with everyone."
       }
     }
   ];
@@ -80,20 +80,20 @@ const Index = () => {
               AI for Everyone
             </h1>
             <p className="text-2xl md:text-3xl font-bold text-white/90">
-              A Statewide Initiative for AI Literacy
+              Kerala's Mission to Make AI Awesome for All
             </p>
             <p className="text-lg md:text-xl max-w-3xl mx-auto text-white/80 leading-relaxed">
-              "We have a historical opportunity and responsibility to establish a human-centred framework for AI research, education, practice and policy."
+              "We've got this amazing chance to shape how AI works for people, not the other way around. Let's make it happen together!"
             </p>
             <p className="text-base text-white/70 italic">
               - Fei-Fei Li, Stanford University & Co-Founder of AI4ALL
             </p>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               onClick={() => navigate('/register')}
               className="bg-white text-vivid-purple hover:bg-white/90 text-xl px-8 py-6 rounded-full shadow-glow-hover transform transition-all duration-300 hover:scale-110 mt-8"
             >
-              Get Started
+              Jump In!
             </Button>
           </div>
         </div>
@@ -105,10 +105,10 @@ const Index = () => {
           <Card className="p-8 bg-gradient-to-br from-vivid-purple/10 via-hot-pink/10 to-bright-orange/10 border-2 border-primary/20 shadow-glow">
             <h2 className="text-3xl font-bold mb-4 flex items-center gap-2">
               <Sparkles className="text-bright-orange" />
-              TL;DR
+              What's This All About?
             </h2>
             <p className="text-lg leading-relaxed text-foreground">
-              The "AI for Everyone" initiative, enabled by TinkerHub, is a statewide program aiming to democratize AI knowledge across Kerala. Building on Kerala's digital literacy legacy, it aims to make communities active creators in the AI era, addressing student skill gaps, workforce changes, and misinformation, while positioning Kerala as a global model for responsible AI.
+              We're on a mission to make AI knowledge accessible to everyone in Kerala! With TinkerHub's support, we're building on our awesome digital literacy legacy to turn people into AI creators, not just users. We're tackling skill gaps, workplace changes, and even fake news, all while showing the world how to do AI the right way.
             </p>
           </Card>
         </div>
@@ -118,28 +118,28 @@ const Index = () => {
       <section id="why-kerala" className="py-16 px-6 bg-gradient-to-br from-electric-blue/5 to-cyber-cyan/5">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-5xl font-black text-center mb-12 bg-gradient-to-r from-vivid-purple via-hot-pink to-bright-orange bg-clip-text text-transparent">
-            Why Kerala Needs AI Literacy Now
+            Why This Matters Right Now
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="p-6 bg-gradient-to-br from-vivid-purple to-hot-pink text-white border-0 shadow-glow transform transition-all duration-300 hover:scale-105 animate-fade-in-up">
               <Brain className="w-12 h-12 mb-4" />
-              <h3 className="text-2xl font-bold mb-3">Literacy for All & Global Model</h3>
+              <h3 className="text-2xl font-bold mb-3">Knowledge for Everyone</h3>
               <p className="leading-relaxed">
-                Equitable AI education that empowers every citizen to understand and apply AI responsibly. Position Kerala as a global model for AI education rooted in social responsibility.
+                We believe everyone deserves to understand AI, not just tech geeks. We're making sure every person in Kerala gets the knowledge they need to use AI responsibly and become a global example of how to do it right.
               </p>
             </Card>
             <Card className="p-6 bg-gradient-to-br from-electric-blue to-cyber-cyan text-white border-0 shadow-glow transform transition-all duration-300 hover:scale-105 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
               <Lightbulb className="w-12 h-12 mb-4" />
-              <h3 className="text-2xl font-bold mb-3">Creators, Not Just Consumers</h3>
+              <h3 className="text-2xl font-bold mb-3">Be a Maker, Not Just a User</h3>
               <p className="leading-relaxed">
-                Enabling Keralites to innovate and build AI-driven solutions, not just use them. Transform from passive users to active creators.
+                Why just use AI when you can build with it? We're helping folks in Kerala create their own AI solutions and innovations. Let's flip the script and become creators!
               </p>
             </Card>
             <Card className="p-6 bg-gradient-to-br from-bright-orange to-hot-pink text-white border-0 shadow-glow transform transition-all duration-300 hover:scale-105 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               <Users className="w-12 h-12 mb-4" />
-              <h3 className="text-2xl font-bold mb-3">Knowledge as a Public Good</h3>
+              <h3 className="text-2xl font-bold mb-3">Learning Together</h3>
               <p className="leading-relaxed">
-                Making AI knowledge accessible to all, with emphasis on open, grassroots-first, multilingual, and equitable approaches where everyone becomes both learner and teacher.
+                AI knowledge should be free and open to all. We're keeping it grassroots, multilingual, and super inclusive. The best part? Everyone gets to be both a student and a teacher!
               </p>
             </Card>
           </div>
@@ -150,26 +150,26 @@ const Index = () => {
       <section id="approach" className="py-16 px-6 bg-card">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-5xl font-black text-center mb-8 bg-gradient-to-r from-vivid-purple to-cyber-cyan bg-clip-text text-transparent">
-            Our Approach
+            How We Roll
           </h2>
           <p className="text-2xl text-center mb-12 text-muted-foreground italic">
-            True learning engages the head, hand, and heart.
+            Real learning happens when you think it, build it, and feel it.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center space-y-4 p-6 rounded-2xl bg-gradient-to-b from-vivid-purple/10 to-transparent">
               <div className="text-6xl font-black text-vivid-purple">💭</div>
               <h3 className="text-2xl font-bold text-primary">Head</h3>
-              <p className="text-foreground">Understand how AI works and why it matters in daily life.</p>
+              <p className="text-foreground">Get the lowdown on how AI actually works and why it matters in your everyday life.</p>
             </div>
             <div className="text-center space-y-4 p-6 rounded-2xl bg-gradient-to-b from-cyber-cyan/10 to-transparent">
               <div className="text-6xl font-black text-cyber-cyan">🛠️</div>
               <h3 className="text-2xl font-bold text-secondary">Hand</h3>
-              <p className="text-foreground">Build with AI tools, create projects, and solve problems that matter locally.</p>
+              <p className="text-foreground">Get your hands dirty! Build cool stuff with AI tools and solve real problems in your community.</p>
             </div>
             <div className="text-center space-y-4 p-6 rounded-2xl bg-gradient-to-b from-bright-orange/10 to-transparent">
               <div className="text-6xl font-black text-bright-orange">❤️</div>
               <h3 className="text-2xl font-bold text-accent">Heart</h3>
-              <p className="text-foreground">Share knowledge, mentor others, and shape a more inclusive AI future.</p>
+              <p className="text-foreground">Share what you learn, help others grow, and be part of building an AI future that works for everyone.</p>
             </div>
           </div>
         </div>
@@ -179,10 +179,10 @@ const Index = () => {
       <section id="programs" className="py-16 px-6 bg-gradient-to-br from-lime-green/5 via-cyber-cyan/5 to-electric-blue/5">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-5xl font-black text-center mb-12 bg-gradient-to-r from-bright-orange via-hot-pink to-vivid-purple bg-clip-text text-transparent">
-            Programs for Everyone
+            Find Your Track
           </h2>
           <p className="text-center text-xl text-muted-foreground mb-12">
-            Click on any card to learn more about each program
+            Pick what fits you best and click to learn more!
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {learnerGroups.map((group, index) => (
@@ -198,17 +198,17 @@ const Index = () => {
       <section className="py-20 px-6 bg-gradient-hero">
         <div className="container mx-auto max-w-4xl text-center space-y-6">
           <h2 className="text-5xl font-black text-white">
-            Ready to Join the AI Revolution?
+            Ready to Dive In?
           </h2>
           <p className="text-xl text-white/80">
-            Be part of Kerala's journey to become a global model for AI literacy
+            Join us in making Kerala the coolest place for AI learning and innovation!
           </p>
-          <Button 
+          <Button
             size="lg"
             onClick={() => navigate('/register')}
             className="bg-white text-vivid-purple hover:bg-white/90 text-xl px-10 py-7 rounded-full shadow-glow-hover transform transition-all duration-300 hover:scale-110"
           >
-            Start Your AI Journey
+            Let's Do This!
           </Button>
         </div>
       </section>

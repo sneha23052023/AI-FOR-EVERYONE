@@ -36,7 +36,7 @@ export const LearnerCard = ({ title, ageGroup, description, color, details }: Le
       <span className="inline-block mb-4 px-3 py-1 bg-white/20 text-white rounded-full text-sm font-semibold">{ageGroup}</span>
       <h3 className="text-3xl font-black mb-4">{title}</h3>
       <p className="text-lg leading-relaxed">{description}</p>
-      <p className="mt-4 text-sm opacity-80">Click to learn more →</p>
+      <p className="mt-4 text-sm opacity-80">Tap to see more details →</p>
     </Card>
   );
 };

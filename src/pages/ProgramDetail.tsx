@@ -13,9 +13,9 @@ const ProgramDetail = () => {
       ageGroup: 'Ages 10-17',
       color: 'from-vivid-purple to-hot-pink',
       icon: '🎨',
-      what: 'Develop curiosity and familiarity with foundational AI concepts such as pattern recognition and logic.',
-      why: 'Children are already immersed in AI. A formal introduction guides their curiosity. Without proper exposure, they risk becoming mere consumers of AI rather than creators or critical thinkers.',
-      how: 'Through pattern recognition games, sorting exercises, AI storybooks, and hands-on experiments using tools like Teachable Machine and Scratch.',
+      what: 'Spark curiosity and get cozy with cool AI basics like spotting patterns and thinking logically!',
+      why: 'Kids are already surrounded by AI every day. Let\'s help them understand it instead of just using it. We want them to be creators and critical thinkers, not just consumers!',
+      how: 'Through fun pattern games, AI storybooks, and hands-on experiments with awesome tools like Teachable Machine and Scratch.',
       activities: ['Interactive AI Games', 'Creative Coding Projects', 'Storytelling with AI', 'Build Your First AI Model']
     },
     students: {
@@ -23,9 +23,9 @@ const ProgramDetail = () => {
       ageGroup: 'Ages 18-25',
       color: 'from-electric-blue to-cyber-cyan',
       icon: '🎓',
-      what: 'Bridge the gap between academics and real-world AI applications through applied learning.',
-      why: 'Many students graduate without understanding the technologies defining their future careers. Tomorrow\'s essential skills need to be developed today.',
-      how: 'Through project-based learning, hackathons, mentorship programs, and collaboration with industry experts to build practical AI solutions.',
+      what: 'Connect what you learn in class with real-world AI that actually matters!',
+      why: 'Too many students graduate without knowing the tech that\'ll shape their careers. We need to build tomorrow\'s skills today!',
+      how: 'Through hands-on projects, exciting hackathons, mentorship from pros, and building real AI solutions that make a difference.',
       activities: ['AI Hackathons', 'Industry Mentorship', 'Real-world Projects', 'Career Workshops']
     },
     professionals: {
@@ -33,9 +33,9 @@ const ProgramDetail = () => {
       ageGroup: 'Working Adults',
       color: 'from-bright-orange to-hot-pink',
       icon: '💼',
-      what: 'Upskill and reskill professionals to adapt to AI-driven workplace transformations.',
-      why: 'AI\'s rapid integration presents significant challenges for professionals, particularly freshers and those in the service industry. Automation and skill-based changes are drastically impacting the workforce.',
-      how: 'Through intensive workshops, certification programs, hands-on projects, and industry partnerships focused on practical AI implementation.',
+      what: 'Level up your skills to thrive in the AI-powered workplace!',
+      why: 'AI is changing jobs fast, especially for newcomers and service workers. Automation and new skills are reshaping everything. Let\'s make sure you\'re ready!',
+      how: 'Through intensive workshops, certification programs, real projects, and partnerships with industry leaders who know their stuff.',
       activities: ['Certification Courses', 'Hands-on Workshops', 'Industry Case Studies', 'AI Tool Training']
     },
     everyone: {
@@ -43,9 +43,9 @@ const ProgramDetail = () => {
       ageGroup: 'All Ages',
       color: 'from-lime-green to-cyber-cyan',
       icon: '🌍',
-      what: 'Create awareness about AI\'s impact on society, culture, and daily life for all community members.',
-      why: 'AI offers opportunities for self-expression but also reflects biases. The rise of deepfakes and misinformation creates risks for all, especially elders facing scams and fake news.',
-      how: 'Through community workshops, multilingual resources, storytelling sessions, and grassroots education programs that make AI knowledge a public good.',
+      what: 'Help everyone understand how AI affects our lives, culture, and communities.',
+      why: 'AI can be amazing for creativity, but it can also spread biases and fake news. Deepfakes and scams are real threats, especially for our elders. Let\'s protect and empower everyone!',
+      how: 'Through community hangouts, resources in your language, storytelling sessions, and grassroots programs that share AI knowledge with everyone.',
       activities: ['Community Workshops', 'Multilingual Sessions', 'AI Safety Training', 'Digital Literacy Programs']
     }
   };
@@ -56,8 +56,8 @@ const ProgramDetail = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <Card className="p-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">Program Not Found</h2>
-          <Button onClick={() => navigate('/')}>Go Back</Button>
+          <h2 className="text-2xl font-bold mb-4">Hmm, can't find that program</h2>
+          <Button onClick={() => navigate('/')}>Take Me Back</Button>
         </Card>
       </div>
     );
@@ -71,7 +71,7 @@ const ProgramDetail = () => {
           onClick={() => navigate('/')}
           className="mb-8"
         >
-          <ArrowLeft className="mr-2 h-4 w-4" /> Back to Programs
+          <ArrowLeft className="mr-2 h-4 w-4" /> Back to All Programs
         </Button>
 
         <Card className={`p-8 md:p-12 bg-gradient-to-br ${data.color} text-white border-0 shadow-glow mb-8`}>
@@ -85,7 +85,7 @@ const ProgramDetail = () => {
             <div className="flex items-start gap-4">
               <Target className="w-8 h-8 text-vivid-purple flex-shrink-0" />
               <div>
-                <h2 className="text-2xl font-bold mb-3">What We Offer</h2>
+                <h2 className="text-2xl font-bold mb-3">What You'll Get</h2>
                 <p className="text-lg leading-relaxed text-muted-foreground">{data.what}</p>
               </div>
             </div>
@@ -95,7 +95,7 @@ const ProgramDetail = () => {
             <div className="flex items-start gap-4">
               <Lightbulb className="w-8 h-8 text-bright-orange flex-shrink-0" />
               <div>
-                <h2 className="text-2xl font-bold mb-3">Why It Matters</h2>
+                <h2 className="text-2xl font-bold mb-3">Why This Rocks</h2>
                 <p className="text-lg leading-relaxed text-muted-foreground">{data.why}</p>
               </div>
             </div>
@@ -105,7 +105,7 @@ const ProgramDetail = () => {
             <div className="flex items-start gap-4">
               <Wrench className="w-8 h-8 text-cyber-cyan flex-shrink-0" />
               <div>
-                <h2 className="text-2xl font-bold mb-3">How We Do It</h2>
+                <h2 className="text-2xl font-bold mb-3">How It Works</h2>
                 <p className="text-lg leading-relaxed text-muted-foreground">{data.how}</p>
               </div>
             </div>
@@ -113,7 +113,7 @@ const ProgramDetail = () => {
         </div>
 
         <Card className="p-8 bg-gradient-to-br from-card to-primary/5">
-          <h2 className="text-3xl font-bold mb-6">Program Activities</h2>
+          <h2 className="text-3xl font-bold mb-6">What You'll Do</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {data.activities.map((activity: string, index: number) => (
               <div 
@@ -132,7 +132,7 @@ const ProgramDetail = () => {
             onClick={() => navigate('/register', { state: { program: data.title } })}
             className="bg-gradient-to-r from-vivid-purple to-hot-pink text-white text-xl px-12 py-6 rounded-full shadow-glow-hover transform transition-all hover:scale-105"
           >
-            Register for {data.title}
+            Sign Me Up for {data.title}
           </Button>
         </div>
       </div>
