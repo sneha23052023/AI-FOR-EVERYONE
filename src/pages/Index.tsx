@@ -1,9 +1,15 @@
 import { LearnerCard } from "@/components/LearnerCard";
+import { Navigation } from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Brain, Lightbulb, Users, Sparkles } from "lucide-react";
+import { Brain, Lightbulb, Users, Sparkles, LogOut } from "lucide-react";
+import { useAuth } from "@/contexts/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
   const learnerGroups = [
     {
       title: "KuttyMakers",
@@ -53,12 +59,24 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background overflow-hidden">
+      <Navigation />
+      
       {/* Hero Section */}
-      <section className="relative py-20 px-6 bg-gradient-hero">
+      <section id="hero" className="relative py-20 px-6 bg-gradient-hero pt-32">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(255,255,255,0.1),rgba(255,255,255,0))]" />
         <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="flex justify-end mb-4">
+            <Button 
+              variant="ghost" 
+              onClick={logout}
+              className="text-white hover:bg-white/20"
+            >
+              <LogOut className="mr-2 h-4 w-4" />
+              Logout
+            </Button>
+          </div>
           <div className="text-center space-y-6 animate-fade-in-up">
-            <h1 className="text-6xl md:text-8xl font-black text-white drop-shadow-2xl">
+            <h1 className="text-6xl md:text-8xl font-black text-white drop-shadow-2xl" style={{ fontFamily: "'Poppins', sans-serif" }}>
               AI for Everyone
             </h1>
             <p className="text-2xl md:text-3xl font-bold text-white/90">
@@ -72,6 +90,7 @@ const Index = () => {
             </p>
             <Button 
               size="lg" 
+              onClick={() => navigate('/register')}
               className="bg-white text-vivid-purple hover:bg-white/90 text-xl px-8 py-6 rounded-full shadow-glow-hover transform transition-all duration-300 hover:scale-110 mt-8"
             >
               Get Started
@@ -81,7 +100,7 @@ const Index = () => {
       </section>
 
       {/* TL;DR Section */}
-      <section className="py-16 px-6 bg-card">
+      <section id="tldr" className="py-16 px-6 bg-card">
         <div className="container mx-auto max-w-6xl">
           <Card className="p-8 bg-gradient-to-br from-vivid-purple/10 via-hot-pink/10 to-bright-orange/10 border-2 border-primary/20 shadow-glow">
             <h2 className="text-3xl font-bold mb-4 flex items-center gap-2">
@@ -96,7 +115,7 @@ const Index = () => {
       </section>
 
       {/* Why Kerala Section */}
-      <section className="py-16 px-6 bg-gradient-to-br from-electric-blue/5 to-cyber-cyan/5">
+      <section id="why-kerala" className="py-16 px-6 bg-gradient-to-br from-electric-blue/5 to-cyber-cyan/5">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-5xl font-black text-center mb-12 bg-gradient-to-r from-vivid-purple via-hot-pink to-bright-orange bg-clip-text text-transparent">
             Why Kerala Needs AI Literacy Now
@@ -128,7 +147,7 @@ const Index = () => {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-16 px-6 bg-card">
+      <section id="approach" className="py-16 px-6 bg-card">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-5xl font-black text-center mb-8 bg-gradient-to-r from-vivid-purple to-cyber-cyan bg-clip-text text-transparent">
             Our Approach
@@ -157,7 +176,7 @@ const Index = () => {
       </section>
 
       {/* Learner Groups Section */}
-      <section className="py-16 px-6 bg-gradient-to-br from-lime-green/5 via-cyber-cyan/5 to-electric-blue/5">
+      <section id="programs" className="py-16 px-6 bg-gradient-to-br from-lime-green/5 via-cyber-cyan/5 to-electric-blue/5">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-5xl font-black text-center mb-12 bg-gradient-to-r from-bright-orange via-hot-pink to-vivid-purple bg-clip-text text-transparent">
             Programs for Everyone
@@ -185,7 +204,8 @@ const Index = () => {
             Be part of Kerala's journey to become a global model for AI literacy
           </p>
           <Button 
-            size="lg" 
+            size="lg"
+            onClick={() => navigate('/register')}
             className="bg-white text-vivid-purple hover:bg-white/90 text-xl px-10 py-7 rounded-full shadow-glow-hover transform transition-all duration-300 hover:scale-110"
           >
             Start Your AI Journey
