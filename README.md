@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# AL FOR EVERYONE
 
 ## Project info
 
