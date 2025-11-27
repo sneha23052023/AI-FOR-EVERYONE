@@ -1,0 +1,75 @@
+import { useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
+import { useAuth } from '@/contexts/AuthContext';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Card } from '@/components/ui/card';
+import { toast } from 'sonner';
+
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const { login } = useAuth();
+  const navigate = useNavigate();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (login(email, password)) {
+      toast.success('Welcome back!');
+      navigate('/');
+    } else {
+      toast.error('Invalid email or password');
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-hero flex items-center justify-center p-6">
+      <Card className="w-full max-w-md p-8 bg-card/95 backdrop-blur-sm shadow-glow">
+        <h1 className="text-4xl font-black text-center mb-2 bg-gradient-to-r from-vivid-purple to-hot-pink bg-clip-text text-transparent">
+          Welcome Back
+        </h1>
+        <p className="text-center text-muted-foreground mb-8">
+          Log in to continue your AI journey
+        </p>
+
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div>
+            <label className="block text-sm font-semibold mb-2">Email</label>
+            <Input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              placeholder="your@email.com"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm font-semibold mb-2">Password</label>
+            <Input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              placeholder="••••••••"
+            />
+          </div>
+
+          <Button type="submit" className="w-full bg-gradient-to-r from-vivid-purple to-hot-pink text-white">
+            Log In
+          </Button>
+
+          <p className="text-center text-sm">
+            Don't have an account?{' '}
+            <Link to="/signup" className="text-vivid-purple font-semibold hover:underline">
+              Sign up
+            </Link>
+          </p>
+        </form>
+      </Card>
+    </div>
+  );
+};
+
+export default Login;
