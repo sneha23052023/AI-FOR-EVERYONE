@@ -31,7 +31,7 @@ export const LearnerCard = ({ title, ageGroup, description, color, details }: Le
   return (
     <Card 
       onClick={handleClick}
-      className={`p-6 bg-gradient-to-br ${colorClasses} text-white border-0 shadow-glow cursor-pointer transform transition-all duration-300 hover:scale-105 animate-fade-in-up`}
+      className={`learner-card p-6 bg-gradient-to-br ${colorClasses} text-white border-0 shadow-glow cursor-pointer transform transition-all duration-500 hover:scale-105 hover:shadow-glow-hover animate-fade-in-up`}
     >
       <span className="inline-block mb-4 px-3 py-1 bg-white/20 text-white rounded-full text-sm font-semibold">{ageGroup}</span>
       <h3 className="text-3xl font-black mb-4">{title}</h3>
