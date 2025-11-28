@@ -1,14 +1,22 @@
 import { LearnerCard } from "@/components/LearnerCard";
 import { Navigation } from "@/components/Navigation";
+import { ChatbotAssistant } from "@/components/ChatbotAssistant";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Brain, Lightbulb, Users, Sparkles, LogOut } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Index = () => {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+  const [greeting, setGreeting] = useState("Hi");
+
+  useEffect(() => {
+    const greetings = ["Hi", "Hello", "Hey", "Welcome back", "Good to see you"];
+    setGreeting(greetings[Math.floor(Math.random() * greetings.length)]);
+  }, []);
 
   const learnerGroups = [
     {
@@ -61,20 +69,25 @@ const Index = () => {
     <div className="min-h-screen bg-background overflow-hidden">
       <Navigation />
       
+      {user && (
+        <div className="fixed top-6 left-6 z-50 text-white text-lg font-semibold bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+          {greeting}, {user.name}! 👋
+        </div>
+      )}
+      
+      <Button 
+        variant="ghost" 
+        onClick={logout}
+        className="fixed top-6 right-6 z-50 text-white hover:bg-white/20"
+      >
+        <LogOut className="mr-2 h-4 w-4" />
+        Logout
+      </Button>
+      
       {/* Hero Section */}
       <section id="hero" className="relative py-20 px-6 bg-gradient-hero pt-32">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(255,255,255,0.1),rgba(255,255,255,0))]" />
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="flex justify-end mb-4">
-            <Button 
-              variant="ghost" 
-              onClick={logout}
-              className="text-white hover:bg-white/20"
-            >
-              <LogOut className="mr-2 h-4 w-4" />
-              Logout
-            </Button>
-          </div>
           <div className="text-center space-y-6 animate-fade-in-up">
             <h1 className="text-6xl md:text-8xl font-black text-white drop-shadow-2xl" style={{ fontFamily: "'Poppins', sans-serif" }}>
               AI for Everyone
@@ -184,7 +197,7 @@ const Index = () => {
           <p className="text-center text-xl text-muted-foreground mb-12">
             Pick what fits you best and click to learn more!
           </p>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="learner-card-container grid md:grid-cols-2 gap-6">
             {learnerGroups.map((group, index) => (
               <div key={index} style={{ animationDelay: `${index * 0.1}s` }}>
                 <LearnerCard {...group} />
@@ -212,6 +225,8 @@ const Index = () => {
           </Button>
         </div>
       </section>
+
+      <ChatbotAssistant />
     </div>
   );
 };
