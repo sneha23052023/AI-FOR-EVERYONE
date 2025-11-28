@@ -45,7 +45,11 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     const foundUser = users.find((u: any) => u.email === email && u.password === password);
     
     if (foundUser) {
-      const userToStore = { email: foundUser.email, name: foundUser.name, program: foundUser.program };
+      const userToStore = { 
+        email: foundUser.email, 
+        name: foundUser.name, 
+        program: foundUser.program || '' 
+      };
       setUser(userToStore);
       localStorage.setItem('currentUser', JSON.stringify(userToStore));
       return true;
