@@ -70,7 +70,7 @@ const Index = () => {
       <Navigation />
       
       {user && (
-        <div className="fixed top-20 left-6 z-40 text-foreground text-lg font-semibold bg-card/90 backdrop-blur-sm px-4 py-2 rounded-full border border-border shadow-lg">
+        <div className="fixed top-[76px] left-6 z-40 text-foreground text-base font-semibold bg-card/90 backdrop-blur-sm px-4 py-2 rounded-full border border-border shadow-lg">
           {greeting}, {user.name}! 👋
         </div>
       )}
@@ -78,7 +78,7 @@ const Index = () => {
       <Button 
         variant="ghost" 
         onClick={logout}
-        className="fixed top-20 right-6 z-40 hover:bg-accent"
+        className="fixed top-[76px] right-6 z-40 hover:bg-accent text-sm"
       >
         <LogOut className="mr-2 h-4 w-4" />
         Logout
