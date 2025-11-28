@@ -1,65 +1,64 @@
 #  AI for Everyone – Website built using AI  
- **Project for TinkerHub Internship Selection**
+📌 **Project for TinkerHub Internship Selection**
 
-This project was created as part of my internship selection task for **TinkerHub**, where the challenge was to build a complete campaign website using AI tools.
+This website was built as part of my internship selection project for **TinkerHub** under the *AI for Everyone* initiative.  
+The challenge required developing a complete website using AI tools — not just coding, but storytelling, design, and content generation.
 
 🔗 **Live Website:** https://ai-foreveryone.lovable.app/  
-🔗 **Tools Used:** Lovable AI, ChatGPT
+🔗 **AI Tools Used:** Lovable AI, ChatGPT, Bolt, Google Gemini
 
 ---
 
 ## 🧠 About the Campaign – *AI for Everyone*
 
-"AI for Everyone" is a statewide initiative by **TinkerHub** to make Artificial Intelligence more accessible, meaningful, and engaging for people across Kerala.
+"AI for Everyone" is a statewide initiative by **TinkerHub** that aims to make Artificial Intelligence accessible, understandable, and meaningful for the people of Kerala.
 
-The initiative focuses on:
+The mission is to:
 
-- AI awareness & creative learning  
-- Encouraging community participation  
-- Responsible adoption of AI  
-- Making Kerala a model for inclusive AI innovation  
+- Spread AI awareness beyond the tech community  
+- Encourage hands-on learning using AI tools  
+- Inspire creative storytelling & digital expression  
+- Promote Kerala as a model for ethical and inclusive AI adoption  
 
 ---
 
 ## 🔥 Project Objective
 
-To build the **official AI for Everyone campaign website using AI tools**, focusing on storytelling, design quality, readability, and clarity — not just code.
+The goal of this project was to create the official **AI for Everyone Campaign Website**, ensuring:
 
-This website contains:
+- Simple & clear communication  
+- Easy navigation and readability  
+- Human-centered content and visuals  
+- AI-assisted development showcased end-to-end  
 
-- About the campaign  
-- Challenge details  
-- Participation guidelines  
-- Submission flow  
-- AI tools that can be used  
-- Evaluation criteria  
-- Purpose & mission of the initiative  
+The website covers campaign details, challenge guidelines, how to participate, required tools, evaluation criteria, and submission flow.
 
 ---
 
-## 🚀 Tech + AI Used
+## 🚀 Tools & AI Used
 
-| Area | Tool |
-|------|------|
-| Content Writing & Structure | ChatGPT |
-| Website Development & Build | Lovable.app AI |
+| Purpose | Tools Used |
+|--------|------------|
+| Content Writing & Structuring | ChatGPT, Gemini |
+| UI / Components & Development | Bolt |
+| Site Building + Deployment | Lovable.app |
 
-AI was used throughout development as required by the challenge.
+AI powered the design flow, text refinement, and website construction — fulfilling the mandatory AI-development requirement.
 
 ---
 
-## 📌 Requirements Covered
+## ✔ Challenge Requirements Achieved
 
-✔ Website built using AI  
-✔ Hosted and publicly accessible  
-✔ Clear design + structured content  
-✔ Communicates initiative purpose effectively  
+- Built entirely using AI tools  
+- Hosted publicly & fully accessible  
+- User-friendly layout and structure  
+- Clear representation of campaign's story & purpose  
 
 ---
 
 ### 🏁 Summary
 
-This project shows how AI can be used to plan, design, build, and deploy a campaign website.  
-It demonstrates creativity, clarity, and AI-assisted development for real-world use.
+This project demonstrates the power of AI-assisted web creation — combining creativity, design, content generation, and development workflow using multiple AI tools.  
+It reflects clarity, accessibility, and modern AI-driven web building.
 
 ---
